@@ -409,7 +409,7 @@ body.dock-dragging iframe {
 .dock-panel {
   box-sizing: border-box;
   position: relative;
-  color: rgba(255, 255, 255, 0.85);
+  color: black;
   background: white;
   border: 1px solid #434343;
 }

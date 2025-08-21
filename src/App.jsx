@@ -6,7 +6,6 @@ import LayeredContainers from './SampleNestedComponent';
 
 // Lazy load the components
 const SampleForm = React.lazy(() => import('./SampleForm'));
-const DataTable = React.lazy(() => import('./SampleTable'));
 
 let layout = {
   dockbox: {
@@ -19,12 +18,10 @@ let layout = {
           {
             tabs: [{
               id: 't3',
-              title: 'Sample Form ',
+              title: 'Sample Form',
               cached: true,
               content: (
-                <React.Suspense fallback={<LoadingComponent />}>
-                  <SampleForm />
-                </React.Suspense>
+               <h5>Hello World</h5>
               ), minWidth: 250, minHeight: 250,
             },
             ],
@@ -38,9 +35,9 @@ let layout = {
         children: [
           {
             tabs: [{
-              id: 'employeTableTab1',
+              id: 'sample-nested-component',
               cached: true,
-              title: 'employeTableTab1',
+              title: 'Sample nested component',
               closable: true,
               content:
                 <React.Suspense fallback={<LoadingComponent />}>
@@ -51,9 +48,9 @@ let layout = {
           },
           {
             tabs: [{
-              id: 'sample mui table',
+              id: 'sample-mui-form',
               cached: true,
-              title: 'sample mui table',
+              title: 'Sample MUI Form',
               closable: true,
               content:
                 <React.Suspense fallback={<LoadingComponent />}>
