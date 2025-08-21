@@ -2,6 +2,7 @@
   "name": "rc-dock-poc",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "/UI",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack serve --config webpack.config.cjs",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.cjs",
